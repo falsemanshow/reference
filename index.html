@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fighter Arena with Character System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+  <div class="ui-row" style="margin-bottom:5px">
+    <span class="bar-label" id="p1name">Player 1</span>
+    <div class="hp-bar"><div class="hp-inner" id="p1hp"></div></div>
+    <span class="bar-label" style="font-size:25px;color:#ffeb3b;">VS</span>
+    <div class="hp-bar"><div class="hp-inner p2" id="p2hp"></div></div>
+    <span class="bar-label" id="p2name">Player 2</span>
+  </div>
+  <div class="ui-row" style="margin-bottom:5px">
+  <span class="bar-label">Points</span>
+  <div class="points-container" id="p1points">
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+  </div>
+  <span class="bar-label">VS</span>
+  <div class="points-container" id="p2points">
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+    <div class="point-circle"></div>
+  </div>
+  <span class="bar-label">Points</span>
+</div>
+  <div class="ui-row">
+    <span class="bar-label">Dash</span>
+    <div class="dash-bar"><div class="dash-inner" id="p1dash"></div></div>
+    <span class="bar-label">Block</span>
+    <div class="block-bar"><div class="block-inner" id="p1block"></div></div>
+    <span class="bar-label">Dash</span>
+    <div class="dash-bar"><div class="dash-inner" id="p2dash"></div></div>
+    <span class="bar-label">Block</span>
+    <div class="block-bar"><div class="block-inner" id="p2block"></div></div>
+  </div>
+  <div id="container">
+    <canvas id="game" width="900" height="600"></canvas>
+    <div id="game-log"></div>
+  </div>
+
+  <script src="onejsfile.js"></script>
+</body>
+</html>
